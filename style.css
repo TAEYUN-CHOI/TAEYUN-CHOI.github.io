@@ -9,99 +9,175 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: black;
-  color: white;
-  font-family: "ArsenalBold", sans-serif;
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.92), rgba(10, 10, 10, 0.96)),
+    url("public/images/star_pattern.gif");
+  background-size: 420px;
+  color: #eaeaea;
+  font-family: "ArsenalBold", Arial, sans-serif;
   overflow-x: hidden;
 }
 
-/* 전체 구조 */
 .container {
   display: flex;
   min-height: 100vh;
 }
 
-/* 왼쪽 사이드 */
 .sidebar {
   width: 300px;
   background: #d90000;
   padding: 40px;
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
   position: fixed;
   height: 100%;
+  z-index: 10;
 }
 
-/* 로고 */
 .logo {
   font-size: 50px;
-  font-weight: bold;
+  color: white;
   text-shadow: 4px 4px 0 black;
+  letter-spacing: 1px;
+}
+
+.logo::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 6px;
+  background: white;
+  margin-top: 10px;
+  box-shadow: 5px 5px 0 black;
 }
 
 .sub {
-  margin-bottom: 40px;
+  margin-top: 8px;
+  margin-bottom: 42px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
-/* 메뉴 */
 nav {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .menu {
   text-decoration: none;
   color: white;
-  font-size: 22px;
-  padding: 10px;
-  background: black;
+  font-size: 20px;
+  padding: 12px 16px;
+  background: #080808;
+  border: 2px solid transparent;
   transform: skew(-10deg);
   transition: all 0.2s ease;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.55);
 }
 
 .menu:hover {
   background: white;
   color: black;
-  transform: translateX(15px) skew(-10deg) scale(1.1);
+  border-color: black;
+  transform: translateX(16px) skew(-10deg) scale(1.06);
 }
 
-/* 오른쪽 콘텐츠 */
 .content {
+  position: relative;
   margin-left: 300px;
-  padding: 80px;
+  padding: 80px 90px;
   width: 100%;
+  min-height: 100vh;
+  z-index: 1;
 }
 
-/* 섹션 */
+.content::before {
+  content: "PORTFOLIO";
+  position: fixed;
+  right: 40px;
+  top: 48%;
+  transform: translateY(-50%) rotate(-7deg);
+  font-size: clamp(80px, 13vw, 230px);
+  color: rgba(255, 255, 255, 0.045);
+  letter-spacing: 6px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.content::after {
+  content: "";
+  position: fixed;
+  right: -120px;
+  top: -80px;
+  width: 340px;
+  height: 130vh;
+  background: #d90000;
+  opacity: 0.18;
+  transform: rotate(12deg);
+  pointer-events: none;
+  z-index: -1;
+}
+
 .section {
-  margin-bottom: 120px;
+  max-width: 720px;
+  margin-bottom: 80px;
+  padding: 34px 38px;
+  background: rgba(15, 15, 15, 0.88);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-left: 8px solid white;
+  box-shadow: 10px 10px 0 rgba(217, 0, 0, 0.75);
+  transform: skew(-1deg);
 }
 
 .section h2 {
-  font-size: 60px;
-  margin-bottom: 20px;
-  color: red;
-  text-shadow: 3px 3px 0 white;
+  font-size: 52px;
+  margin-bottom: 18px;
+  color: white;
+  text-shadow: 4px 4px 0 #d90000;
+  letter-spacing: 1px;
 }
 
 .section p {
   font-size: 20px;
   margin-bottom: 10px;
+  color: #d8d8d8;
+  line-height: 1.6;
 }
 
-/* 반응형 */
 @media (max-width: 800px) {
   .sidebar {
-    width: 200px;
+    width: 210px;
+    padding: 28px;
   }
 
   .content {
-    margin-left: 200px;
-    padding: 40px;
+    margin-left: 210px;
+    padding: 50px 35px;
   }
 
   .logo {
-    font-size: 30px;
+    font-size: 32px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 26px;
+  }
+
+  .section h2 {
+    font-size: 38px;
+  }
+
+  .section p {
+    font-size: 17px;
   }
 }
