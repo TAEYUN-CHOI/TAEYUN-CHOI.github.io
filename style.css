@@ -24,10 +24,12 @@ body {
 }
 
 .container {
+  position: relative;
   display: flex;
   min-height: 100vh;
 }
 
+/* 왼쪽 사이드 */
 .sidebar {
   width: 300px;
   background: #d90000;
@@ -35,7 +37,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
   position: fixed;
   height: 100%;
-  z-index: 10;
+  z-index: 20;
 }
 
 .logo {
@@ -85,29 +87,17 @@ nav {
   background: white;
   color: black;
   border-color: black;
-  transform: translateX(16px) skew(-10deg) scale(1.06);
+  transform: translateX(18px) skew(-10deg) scale(1.08);
 }
 
+/* 오른쪽 콘텐츠 */
 .content {
   position: relative;
   margin-left: 300px;
   padding: 80px 90px;
   width: 100%;
   min-height: 100vh;
-  z-index: 1;
-}
-
-.content::before {
-  content: "PORTFOLIO";
-  position: fixed;
-  right: 40px;
-  top: 48%;
-  transform: translateY(-50%) rotate(-7deg);
-  font-size: clamp(80px, 13vw, 230px);
-  color: rgba(255, 255, 255, 0.045);
-  letter-spacing: 6px;
-  pointer-events: none;
-  z-index: -1;
+  z-index: 5;
 }
 
 .content::after {
@@ -124,6 +114,7 @@ nav {
   z-index: -1;
 }
 
+/* 카드 */
 .section {
   max-width: 720px;
   margin-bottom: 80px;
@@ -150,23 +141,31 @@ nav {
   line-height: 1.6;
 }
 
+/* 오른쪽 캐릭터 */
 .joker-bg {
   position: fixed;
-  right: 0;
-  bottom: 0;
-
-  width: min(45vw, 600px);
-
-  opacity: 0.85;
+  right: -140px;
+  bottom: -80px;
+  width: min(62vw, 920px);
+  opacity: 0.9;
   pointer-events: none;
-
-  z-index: 0;
-
-  filter: 
-    drop-shadow(20px 20px 0 rgba(0,0,0,0.7))
+  z-index: 2;
+  filter:
+    drop-shadow(24px 24px 0 rgba(0, 0, 0, 0.8))
     contrast(1.1);
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
 }
 
+/* 메뉴 hover 시 캐릭터 반응 */
+.joker-bg.active {
+  transform: translateX(-30px) scale(1.06) rotate(-2deg);
+  opacity: 1;
+  filter:
+    drop-shadow(32px 32px 0 rgba(217, 0, 0, 0.55))
+    contrast(1.25);
+}
+
+/* 반응형 */
 @media (max-width: 800px) {
   .sidebar {
     width: 210px;
@@ -196,5 +195,12 @@ nav {
 
   .section p {
     font-size: 17px;
+  }
+
+  .joker-bg {
+    width: 95vw;
+    right: -220px;
+    bottom: -40px;
+    opacity: 0.45;
   }
 }
