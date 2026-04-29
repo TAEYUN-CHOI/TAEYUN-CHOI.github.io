@@ -90,7 +90,6 @@ nav {
   transform: translateX(18px) skew(-10deg) scale(1.08);
 }
 
-/* 오른쪽 콘텐츠 */
 .content {
   position: relative;
   margin-left: 300px;
@@ -114,7 +113,6 @@ nav {
   z-index: -1;
 }
 
-/* 카드 */
 .section {
   max-width: 720px;
   margin-bottom: 80px;
@@ -141,22 +139,26 @@ nav {
   line-height: 1.6;
 }
 
-/* 오른쪽 캐릭터 */
 .joker-bg {
   position: fixed;
-  right: -250px;
-  bottom: -150px;
-  width: 1000px;
-  opacity: 0.6;
+
+  right: -350px;
+  bottom: -200px;
+
+  width: min(110vw, 1600px);
+
+  opacity: 0.7;
   pointer-events: none;
-  z-index: 2;
+
+  z-index: 1;
+
   filter:
-    drop-shadow(24px 24px 0 rgba(0, 0, 0, 0.8))
-    contrast(1.1);
-  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+    drop-shadow(40px 40px 0 rgba(0,0,0,0.9))
+    contrast(1.2);
+
+  transition: transform 0.3s ease;
 }
 
-/* 메뉴 hover 시 캐릭터 반응 */
 .joker-bg.active {
   transform: translateX(-30px) scale(1.06) rotate(-2deg);
   opacity: 1;
@@ -165,7 +167,6 @@ nav {
     contrast(1.25);
 }
 
-/* 반응형 */
 @media (max-width: 800px) {
   .sidebar {
     width: 210px;
