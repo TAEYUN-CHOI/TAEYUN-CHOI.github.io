@@ -17,6 +17,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: auto;
   background: #050505;
   color: white;
   font-family: "ArsenalBold", Arial, sans-serif;
@@ -29,7 +30,6 @@ body {
   overflow: hidden;
   background: #050505;
 }
-
 /* 왼쪽 붉은 영역 */
 .left-panel {
   position: absolute;
@@ -82,13 +82,11 @@ body {
 /* 캐릭터 */
 .joker-main {
   position: absolute;
-  left: 51%;
-  top: 55%;
+  left: 55%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  width: min(58vw, 760px);
+  width: min(50vw, 650px);
   z-index: 5;
-  pointer-events: none;
-  filter: drop-shadow(10px 10px 0 #000);
 }
 
 .joker-icon {
