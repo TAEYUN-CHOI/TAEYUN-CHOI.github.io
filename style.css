@@ -150,6 +150,23 @@ nav {
   line-height: 1.6;
 }
 
+.joker-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  width: min(45vw, 600px);
+
+  opacity: 0.85;
+  pointer-events: none;
+
+  z-index: 0;
+
+  filter: 
+    drop-shadow(20px 20px 0 rgba(0,0,0,0.7))
+    contrast(1.1);
+}
+
 @media (max-width: 800px) {
   .sidebar {
     width: 210px;
