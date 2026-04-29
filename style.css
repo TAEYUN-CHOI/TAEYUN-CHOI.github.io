@@ -144,10 +144,10 @@ nav {
 /* 오른쪽 캐릭터 */
 .joker-bg {
   position: fixed;
-  right: -140px;
-  bottom: -80px;
-  width: min(62vw, 920px);
-  opacity: 0.9;
+  right: -250px;
+  bottom: -150px;
+  width: 1000px;
+  opacity: 0.6;
   pointer-events: none;
   z-index: 2;
   filter:
