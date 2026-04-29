@@ -3,56 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TAEYUN-CHOI</title>
+  <title>TAEYUN-CHOI Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <section class="left-panel">
-      <div class="title-box">
-        <img src="public/images/command.png" alt="Command" class="command-title" />
-        <p class="subtitle">TAEYUN-CHOI</p>
-      </div>
 
-      <nav class="menu">
-        <a href="#about" class="menu-item">
-          <img src="public/images/menu_Item.png" alt="Item" />
-        </a>
-        <a href="#projects" class="menu-item">
-          <img src="public/images/menu_skill.png" alt="Skill" />
-        </a>
-        <a href="#contact" class="menu-item">
-          <img src="public/images/menu_Equip.png" alt="Equip" />
-        </a>
+  <div class="container">
+
+    <aside class="sidebar">
+      <h1 class="logo">TAEYUN</h1>
+      <p class="sub">CHOI</p>
+
+      <nav>
+        <a href="#about" class="menu">ABOUT</a>
+        <a href="#skills" class="menu">SKILLS</a>
+        <a href="#projects" class="menu">PROJECTS</a>
+        <a href="#contact" class="menu">CONTACT</a>
       </nav>
-    </section>
+    </aside>
 
-    <section class="right-panel">
-      <img src="public/images/star_pattern.gif" alt="" class="star-bg" />
-      <img src="public/images/sparkles.png" alt="" class="sparkles sparkles-1" />
-      <img src="public/images/sparkles.png" alt="" class="sparkles sparkles-2" />
-    </section>
+    <main class="content">
 
-    <img src="public/images/joker_main_menu.png" alt="Main character" class="joker-main" />
-    <img src="public/images/joker_icon.png" alt="Icon" class="joker-icon" />
+      <section id="about" class="section">
+        <h2>ABOUT</h2>
+        <p>컴퓨터공학 전공</p>
+        <p>AI · 웹 개발 · 게임 개발</p>
+      </section>
 
-    <section class="content-card" id="about">
-      <h2>ABOUT ME</h2>
-      <p>Computer Engineering Student</p>
-      <p>AI · Web Game · Creative Development</p>
-    </section>
+      <section id="skills" class="section">
+        <h2>SKILLS</h2>
+        <p>HTML / CSS / JavaScript</p>
+        <p>React / Next.js / Python</p>
+      </section>
 
-    <section class="content-card" id="projects">
-      <h2>SKILLS</h2>
-      <p>HTML / CSS / JavaScript</p>
-      <p>React · Next.js · Python · AI</p>
-    </section>
+      <section id="projects" class="section">
+        <h2>PROJECTS</h2>
+        <p>AI 웹게임 프로젝트</p>
+        <p>개인 포트폴리오 사이트</p>
+      </section>
 
-    <section class="content-card" id="contact">
-      <h2>CONTACT</h2>
-      <p>GitHub Portfolio Page</p>
-    </section>
-  </main>
+      <section id="contact" class="section">
+        <h2>CONTACT</h2>
+        <p>GitHub: github.com/yourname</p>
+      </section>
+
+    </main>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
