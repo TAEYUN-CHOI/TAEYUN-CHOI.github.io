@@ -29,7 +29,6 @@ body {
   min-height: 100vh;
 }
 
-/* 왼쪽 사이드 */
 .sidebar {
   width: 300px;
   background: #d90000;
@@ -141,15 +140,11 @@ nav {
 
 .joker-bg {
   position: fixed;
-
   right: -350px;
   bottom: -200px;
-
   width: min(110vw, 1600px);
-
   opacity: 0.7;
   pointer-events: none;
-
   z-index: 1;
 
   filter:
