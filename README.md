@@ -1,13 +1,15 @@
 # TAEYUN CHOI Portfolio
 
-게임 프로그래밍, 컴퓨터 그래픽스, 물리 시뮬레이션을 공부하는 최태윤의 개인 포트폴리오입니다.
+게임·그래픽스 프로그래머를 목표로 하는 최태윤의 개인 포트폴리오 사이트입니다.
 
-## Featured Projects
+## 구성
 
-- **RiftBeat** — Phaser/TypeScript와 Python/FastAPI 기반 AI 리듬게임
-- **SDL2 턴제 포격 게임** — C++17, 발사체 물리, 충돌, 파괴 지형 시스템
-- **8086 Memory Match** — EMU8086 어셈블리 기반 콘솔 카드 매칭 게임
+- 게임 UI에서 영감을 받은 고대비 레드·블랙·화이트 비주얼
+- 스크롤 진행 표시, 섹션별 등장 효과, 패럴랙스, 카드 틸트 애니메이션
+- RiftBeat, SDL2 턴제 포격 게임, 8086 Memory Match 프로젝트 소개
+- 기술 스택, 학습 분야, 향후 DirectX 12 / C++ 엔진 학습 목표
 
-## Tech
+## 실행
 
-순수 HTML, CSS, JavaScript로 제작했으며 별도 빌드 과정 없이 GitHub Pages에서 바로 배포할 수 있습니다.
+별도의 빌드 과정 없이 `index.html`을 브라우저에서 열면 됩니다.
+GitHub Pages에서는 저장소 루트의 `index.html`을 바로 배포할 수 있습니다.
