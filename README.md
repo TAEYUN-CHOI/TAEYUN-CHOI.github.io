@@ -10,6 +10,6 @@
 - 기술 스택, 학습 분야, 향후 DirectX 12 / C++ 엔진 학습 목표
 
 ## 실행
-
+https://taeyun-choi.github.io/
 별도의 빌드 과정 없이 `index.html`을 브라우저에서 열면 됩니다.
 GitHub Pages에서는 저장소 루트의 `index.html`을 바로 배포할 수 있습니다.
