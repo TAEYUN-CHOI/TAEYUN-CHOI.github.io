@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="최태윤의 C++ 게임 엔진·게임 클라이언트 포트폴리오. 자체 게임엔진 TaeEngine, DirectX 12 렌더링, UE5 소스 분석, 물리 시뮬레이션 프로젝트를 소개합니다." name="description"/>
+<meta content="#e20b17" name="theme-color"/>
+<meta content="TAEYUN CHOI | C++ Engine &amp; Game Client Programmer" property="og:title"/>
+<meta content="C++/DirectX 12 기반 자체 게임엔진과 게임 시스템, 렌더링, 물리 시뮬레이션을 구현하는 최태윤의 포트폴리오입니다." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>TAEYUN CHOI | C++ Engine &amp; Game Client Programmer</title>
+<link href="public/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link as="image" href="public/hero-concept.webp" rel="preload"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div aria-hidden="true" class="scroll-progress"><span></span></div>
+<div aria-hidden="true" class="cursor-dot"></div>
+<div aria-hidden="true" class="cursor-ring"></div>
+<div aria-hidden="true" class="noise"></div>
+<div aria-hidden="true" class="page-shards"><i></i><i></i><i></i></div>
+<header class="topbar">
+<a aria-label="홈으로 이동" class="brand magnetic" href="#home">
+<span class="brand-mark">TC</span>
+<span class="brand-copy"><b>TAEYUN CHOI</b><small>ENGINE / GAME CLIENT</small></span>
+</a>
+<button aria-expanded="false" aria-label="메뉴 열기" class="nav-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="주요 메뉴" class="nav">
+<a href="#about"><b>01</b> ABOUT</a>
+<a href="#projects"><b>02</b> PROJECTS</a>
+<a href="#skills"><b>03</b> SKILLS</a>
+<a href="#study"><b>04</b> STUDY</a>
+<a href="#contact"><b>05</b> CONTACT</a>
+</nav>
+<div aria-live="polite" class="section-status"><span>NOW</span><strong>HOME</strong></div>
+</header>
+<main>
+<section class="hero" data-section-name="HOME" id="home">
+<div aria-hidden="true" class="hero-art" data-parallax="0.16">
+<img alt="" src="public/hero-concept.webp"/>
+<div class="hero-art-slice slice-a"></div>
+<div class="hero-art-slice slice-b"></div>
+</div>
+<div aria-hidden="true" class="hero-black-swipe"></div>
+<div aria-hidden="true" class="hero-red-swipe"></div>
+<div class="hero-inner section-shell">
+<div class="hero-copy reveal reveal-left">
+<div class="hero-kicker"><span>C++ CUSTOM ENGINE</span><i></i><span>SEOUL · 2026 PORTFOLIO</span></div>
+<p class="hero-role">ENGINE · GAME CLIENT · RENDERING</p>
+<h1>
+<span class="title-line solid">BUILD THE</span>
+<span class="title-line outlined">ENGINE.</span>
+<span class="title-line slash">PROVE IT</span>
+<span class="title-line solid red-word">IN GAME.</span>
+</h1>
+<p class="hero-description">
+        안녕하세요, 최태윤입니다. C++와 DirectX 12 기반 자체 게임엔진을 중심으로 렌더링 파이프라인, 엔진 구조,
+        에셋 시스템, 물리 시뮬레이션을 직접 구현하고 실제 게임 Vertical Slice로 검증하는 게임/엔진 프로그래머 포트폴리오입니다.
+      </p>
+<div class="hero-actions">
+<a class="slash-button primary magnetic" href="#projects"><span>메인 포폴 보기</span><i>↘</i></a>
+<a class="slash-button dark magnetic" href="https://github.com/TAEYUN-CHOI/TaeEngine" rel="noreferrer" target="_blank"><span>TaeEngine</span><i>↗</i></a>
+</div>
+</div>
+<div aria-label="포트폴리오 핵심 방향" class="hero-stamp reveal reveal-right">
+<span class="stamp-top">MAIN PORTFOLIO</span>
+<strong>DX12</strong>
+<p>CUSTOM ENGINE<br/>UE5 ANALYSIS<br/>VERTICAL SLICE</p>
+<i>01</i>
+</div>
+</div>
+<a aria-label="다음 섹션으로 이동" class="scroll-cue" href="#about">
+<span>SCROLL TO ENTER</span><i>↓</i>
+</a>
+</section>
+<div aria-hidden="true" class="marquee">
+<div class="marquee-track"><span>C++ CUSTOM ENGINE</span><i>◆</i><span>DIRECTX 12 RENDERING</span><i>◆</i><span>UE5 SOURCE STUDY</span><i>◆</i><span>GAME PHYSICS</span><i>◆</i><span>VERTICAL SLICE</span><i>◆</i><span>C++ CUSTOM ENGINE</span><i>◆</i><span>DIRECTX 12 RENDERING</span><i>◆</i><span>UE5 SOURCE STUDY</span><i>◆</i><span>GAME PHYSICS</span><i>◆</i><span>VERTICAL SLICE</span><i>◆</i></div>
+</div>
+<section class="section section-light" data-section-name="ABOUT" id="about">
+<div aria-hidden="true" class="section-cut cut-top"></div>
+<div class="section-shell">
+<header class="section-heading reveal reveal-skew">
+<div class="section-badge"><span>01</span><b>PROFILE</b></div>
+<div>
+<p class="eyebrow">ABOUT ME / ENGINEER PROFILE</p>
+<h2>엔진을 이해하고,<br/><em>게임에서 검증합니다.</em></h2>
+</div>
+</header>
+<div class="about-layout">
+<article class="profile-card reveal reveal-left tilt-card">
+<div class="profile-tape">PORTFOLIO FILE</div>
+<div class="profile-id">
+<span>NAME</span><strong>CHOI<br/>TAEYUN</strong><i>ENGINE-2026</i>
+</div>
+<div class="profile-core">
+<span>CORE</span>
+<b>C++ / DIRECTX 12</b>
+<b>ENGINE ARCHITECTURE</b>
+<b>GAME PHYSICS / RENDERING</b>
+</div>
+<div class="profile-seal">BUILD<br/>MEASURE<br/>DOCUMENT</div>
+</article>
+<article class="about-story reveal reveal-right">
+<p class="lead">
+          C++ 기반 게임 클라이언트·엔진 프로그래머를 목표로, 자체 게임엔진을 직접 설계하고 구현합니다.
+        </p>
+<p>
+          단순히 상용 엔진 기능을 사용하는 데서 멈추지 않고, Application Loop, Entity/Component, Asset Handle,
+          Render Queue, D3D12 리소스 관리처럼 게임이 실제로 실행되기 위해 필요한 내부 구조를 코드와 문서로 남깁니다.
+        </p>
+<p>
+          UE5 소스 분석은 코드를 복사하기 위한 목적이 아니라, 대형 엔진이 Actor/Component, Asset, RHI/RDG, Editor 문제를
+          어떻게 해결하는지 관찰하고 내 엔진에 맞는 작은 버전으로 재설계하기 위한 기준으로 활용합니다.
+        </p>
+<div class="facts-grid">
+<div class="fact"><span>MAIN PORTFOLIO</span><strong>TaeEngine v0.1</strong></div>
+<div class="fact"><span>TARGET ROLE</span><strong>Game Client / Engine Programmer</strong></div>
+<div class="fact"><span>FOCUS</span><strong>C++ · DX12 · Rendering · Physics</strong></div>
+<div class="fact"><span>METHOD</span><strong>Build → Test → Profile → Document</strong></div>
+</div>
+</article>
+</div>
+</div>
+<div aria-hidden="true" class="section-cut cut-bottom"></div>
+</section>
+<section class="section section-dark" data-section-name="PROJECTS" id="projects">
+<div aria-hidden="true" class="project-bg-word">CASE FILES</div>
+<div class="section-shell">
+<header class="section-heading inverse reveal reveal-skew">
+<div class="section-badge red"><span>02</span><b>WORK</b></div>
+<div>
+<p class="eyebrow">FEATURED PROJECTS / PORTFOLIO LOG</p>
+<h2>구조를 설계하고,<br/><em>결과물로 증명합니다.</em></h2>
+</div>
+</header>
+<div class="projects-list">
+<article class="project-card featured reveal reveal-left tilt-card">
+<div class="project-ribbon">MAIN PORTFOLIO / 2026</div>
+<div class="project-number">CASE<br/><strong>01</strong></div>
+<div aria-hidden="true" class="project-visual engine-visual">
+<span class="engine-node node-a">CORE</span><span class="engine-node node-b">RHI</span><span class="engine-node node-c">ECS</span><span class="engine-node node-d">ASSET</span>
+<span class="engine-ring ring-a"></span><span class="engine-ring ring-b"></span><span class="engine-ray ray-a"></span><span class="engine-ray ray-b"></span>
+<strong>TAE<br/>ENGINE</strong>
+<em>C++ DX12 ENGINE V0.1</em>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>CUSTOM GAME ENGINE</span><span>SOLO R&amp;D</span></div>
+<h3>TaeEngine<br/>v0.1</h3>
+<p class="project-summary">Windows PC를 대상으로 한 C++20 / DirectX 12 기반 자체 게임엔진입니다. 엔진 코어, 렌더러, 에셋, 에디터, 게임 Vertical Slice까지 하나의 제작 흐름으로 연결했습니다.</p>
+<ul class="project-points">
+<li>Application, Window, Input, Time, Log, Test 기반 엔진 부트스트랩</li>
+<li>Vector/Matrix/Quaternion 기반 Math Library와 Transform/Camera 시스템</li>
+<li>D3D12 Device, SwapChain, CommandList, Shader, Material, Render Queue 구현</li>
+<li>Scene / Entity / Component, Asset Handle, ImGui Editor, 샘플 게임 Vertical Slice 구성</li>
+</ul>
+<div class="tags"><span>C++20</span><span>DirectX 12</span><span>HLSL</span><span>CMake</span><span>ImGui</span><span>Engine Architecture</span></div>
+<div class="project-links"><a href="https://github.com/TAEYUN-CHOI/TaeEngine" rel="noreferrer" target="_blank">GitHub Repo ↗</a><a href="#study">Architecture Notes ↓</a></div>
+</div>
+</article>
+<article class="project-card reverse reveal reveal-right tilt-card">
+<div class="project-ribbon yellow">GAME PROGRAMMING / 2026</div>
+<div class="project-number">CASE<br/><strong>02</strong></div>
+<div aria-hidden="true" class="project-visual artillery-visual">
+<span class="terrain"></span><span class="tank tank-left"></span><span class="tank tank-right"></span><span class="trajectory"></span><span class="projectile"></span>
+<strong>FIRE!</strong><em>PHYSICS + STRATEGY</em>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>2D ARTILLERY GAME</span><span>SOLO DEVELOPMENT</span></div>
+<h3>SDL2 턴제<br/>포격 게임</h3>
+<p class="project-summary">C++17과 SDL2로 제작한 2인 턴제 포격 게임입니다. 발사체 물리, 충돌, 지형 파괴, 유닛 스킬을 직접 구현해 게임플레이 시스템으로 연결했습니다.</p>
+<ul class="project-points">
+<li>중력·바람·공기저항을 반영한 발사체 운동과 궤적 미리보기</li>
+<li>Fixed Substep과 Euler 적분으로 빠른 발사체 충돌 누락 완화</li>
+<li>AABB 충돌, 타일 파괴, 폭발 반경, 넉백, 이동 에너지 시스템</li>
+<li>팀/맵 선택 → 전투 → 결과까지 전체 게임 루프 완성</li>
+</ul>
+<div class="tags"><span>C++17</span><span>SDL2</span><span>Physics</span><span>Collision</span><span>Game Design</span></div>
+<div class="project-links"><a href="https://github.com/TAEYUN-CHOI/SDL2-Artillery-Game" rel="noreferrer" target="_blank">GitHub Repo ↗</a><a href="#contact">Demo Video 준비</a></div>
+</div>
+</article>
+<article class="project-card reveal reveal-left tilt-card">
+<div class="project-ribbon">CAPSTONE / 2026</div>
+<div class="project-number">CASE<br/><strong>03</strong></div>
+<div aria-hidden="true" class="project-visual rhythm-visual">
+<span class="orbit orbit-a"></span><span class="orbit orbit-b"></span>
+<span class="beat beat-a"></span><span class="beat beat-b"></span><span class="beat beat-c"></span>
+<div class="visual-grid"></div>
+<strong>RIFT<br/>BEAT</strong>
+<em>AI RHYTHM SYSTEM</em>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>AI RHYTHM GAME</span><span>TEAM PROJECT</span></div>
+<h3>RiftBeat</h3>
+<p class="project-summary">사용자가 업로드한 음악을 분석해 리듬 맵과 시각 이벤트를 생성하고, 웹에서 바로 플레이할 수 있도록 만든 AI 기반 리듬게임입니다.</p>
+<ul class="project-points">
+<li>Phaser + TypeScript 기반 판정, 콤보, 노드 및 씬 전환 시스템</li>
+<li>FastAPI와 librosa·BeatNet·Demucs 음악 분석 파이프라인</li>
+<li>BPM 정규화·오프셋 탐색·정렬 점수 기반 Stable Rhythm Grid</li>
+<li>Stem 특징, 섹션 밀도, Tempo Forecast, Portal Rush 구현</li>
+</ul>
+<div class="tags"><span>TypeScript</span><span>Phaser</span><span>Vite</span><span>Python</span><span>FastAPI</span><span>Audio Analysis</span></div>
+<div class="project-links"><a href="https://github.com/TAEYUN-CHOI/RiftBeat-AI-RhythmGame" rel="noreferrer" target="_blank">GitHub Repo ↗</a><a href="#contact">Case Study 준비</a></div>
+</div>
+</article>
+<article class="project-card reverse reveal reveal-right tilt-card">
+<div class="project-ribbon white">SOURCE STUDY / 2026</div>
+<div class="project-number">CASE<br/><strong>04</strong></div>
+<div aria-hidden="true" class="project-visual memory-visual">
+<span>UE</span><span>OBJ</span><span>RHI</span><span>RDG</span><span>GC</span><span>AST</span><span>EDT</span><span>TSK</span>
+<strong>UE5</strong><em>ENGINE ARCHAEOLOGY</em>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>UE5 SOURCE STUDY</span><span>ARCHITECTURE NOTES</span></div>
+<h3>UE5 Source<br/>Study Notes</h3>
+<p class="project-summary">UE5 소스코드를 직접 복사하지 않고, 대형 엔진이 문제를 해결하는 방식을 분석해 자체 엔진 설계 기준으로 재구성한 학습 노트입니다.</p>
+<ul class="project-points">
+<li>Build/Module/Startup, Core Types, UObject/Reflection/GC 분석</li>
+<li>World, Actor, Component, Tick, Asset Registry, Async Loading 흐름 정리</li>
+<li>Game Thread → Render Thread → RHI/RDG 렌더링 경계 추적</li>
+<li>분석 결과를 TaeEngine의 작은 독립 구현과 문서로 연결</li>
+</ul>
+<div class="tags"><span>UE5</span><span>C++</span><span>Architecture</span><span>RHI/RDG</span><span>Asset System</span><span>Editor</span></div>
+<div class="project-links"><a href="https://github.com/TAEYUN-CHOI/UE5-Source-Study-Notes" rel="noreferrer" target="_blank">Study Notes ↗</a><a href="#study">Study Track ↓</a></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-red" data-section-name="SKILLS" id="skills">
+<div class="section-shell">
+<header class="section-heading reveal reveal-skew">
+<div class="section-badge dark"><span>03</span><b>GEAR</b></div>
+<div>
+<p class="eyebrow dark-text">TECH STACK / EQUIPMENT</p>
+<h2>엔진 제작 흐름에 맞춘<br/><em>실전 기술 스택.</em></h2>
+</div>
+</header>
+<div class="skill-wheel">
+<div class="skill-core reveal reveal-pop">
+<span>MAIN</span><strong>DX12</strong><p>C++ ENGINE<br/>RENDERING<br/>TOOLS</p>
+</div>
+<div class="skill-grid">
+<article class="skill-card reveal reveal-left tilt-card"><span class="skill-no">A</span><p>LANGUAGES</p><h3>Systems Code</h3><div class="skill-items"><span>C++20</span><span>C++17</span><span>C</span><span>C#</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>8086 Assembly</span></div></article>
+<article class="skill-card reveal reveal-right tilt-card"><span class="skill-no">B</span><p>ENGINE &amp; GRAPHICS</p><h3>Rendering</h3><div class="skill-items"><span>DirectX 12</span><span>HLSL</span><span>RHI</span><span>Render Queue</span><span>Material</span><span>Shader</span><span>PBR</span><span>Debug View</span></div></article>
+<article class="skill-card reveal reveal-left tilt-card"><span class="skill-no">C</span><p>GAME SYSTEM</p><h3>Runtime</h3><div class="skill-items"><span>Application Loop</span><span>Entity/Component</span><span>Transform</span><span>Asset Handle</span><span>Collision</span><span>Physics</span><span>ImGui Editor</span><span>Vertical Slice</span></div></article>
+<article class="skill-card reveal reveal-right tilt-card"><span class="skill-no">D</span><p>WORKFLOW</p><h3>Tools</h3><div class="skill-items"><span>Git</span><span>GitHub</span><span>CMake</span><span>Visual Studio</span><span>RenderDoc/PIX</span><span>Docker</span><span>UE5 Source</span><span>Docs</span></div></article>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-paper" data-section-name="STUDY" id="study">
+<div class="section-shell">
+<header class="section-heading reveal reveal-skew">
+<div class="section-badge"><span>04</span><b>TRAIN</b></div>
+<div>
+<p class="eyebrow">STUDY &amp; GROWTH / ENGINE TRACK</p>
+<h2>공부를 코드로,<br/><em>코드를 포트폴리오로.</em></h2>
+</div>
+</header>
+<div class="study-timeline">
+<article class="study-item reveal reveal-left"><span class="study-no">01</span><div><h3>Custom Engine Architecture</h3><p>Application/Window/Input/Time/Log, CMake 모듈 분리, Engine/Editor/Game/Test 타깃 구성, README와 릴리스 태그 기반 진행 기록</p></div></article>
+<article class="study-item reveal reveal-right"><span class="study-no">02</span><div><h3>UE5 Source Archaeology</h3><p>Build/Module/Startup, Core Types, UObject/Reflection/GC, World/Actor/Component, Asset, RHI/RDG, Editor 구조 분석과 독립 재설계</p></div></article>
+<article class="study-item reveal reveal-left"><span class="study-no">03</span><div><h3>Rendering &amp; Graphics Math</h3><p>Vector/Matrix/Quaternion, Transform, Camera, D3D12 Pipeline, Shader, Material, Lighting, Shadow, PBR, GPU Capture와 성능 측정</p></div></article>
+<article class="study-item reveal reveal-right"><span class="study-no">04</span><div><h3>Game Physics &amp; Simulation</h3><p>Projectile Motion, Euler Integration, Fixed Timestep, Collision Detection/Response, Bounding Volume, Terrain Destruction, Debug Visualization</p></div></article>
+<article class="study-item reveal reveal-left"><span class="study-no">05</span><div><h3>C++ Algorithm &amp; CS</h3><p>STL, 구현, 정렬/해시, Stack/Queue, BFS/DFS, 이분 탐색, DP 기초, Cache/Memory Locality, Virtual Memory, GPU 구조</p></div></article>
+<article class="study-item reveal reveal-right"><span class="study-no">06</span><div><h3>Portfolio Documentation</h3><p>기능별 문제 정의, 설계 선택, 테스트 결과, 성능 수치, 스크린샷/영상, 회고를 남겨 채용자가 3분 안에 방향성을 이해할 수 있게 구성</p></div></article>
+</div>
+<div class="next-focus reveal reveal-pop">
+<div class="next-label">TARGET</div>
+<div><p>GAME CLIENT / ENGINE PROGRAMMER</p><h3>C++로 구조를 만들고,<br/>게임에서 검증하는 개발자.</h3><span>메인 포트폴리오는 TaeEngine이며, SDL2 포격 게임과 RiftBeat는 게임 시스템 구현 경험, UE5 Source Study는 엔진 구조 분석 역량을 보여주는 보조 포트폴리오로 배치합니다.</span></div>
+<i>→</i>
+</div>
+</div>
+</section>
+<section class="contact-section" data-section-name="CONTACT" id="contact">
+<div aria-hidden="true" class="contact-art"><span>LET'S</span><strong>CONNECT</strong></div>
+<div class="section-shell contact-inner">
+<div class="contact-copy reveal reveal-left">
+<p class="eyebrow">CONTACT / START A NEW MISSION</p>
+<h2>함께 만들고,<br/><em>더 깊게 구현하겠습니다.</em></h2>
+<p>C++ 게임 클라이언트, 엔진 프로그래밍, 그래픽스, 물리 시뮬레이션과 관련된 기회를 기다립니다.</p>
+</div>
+<div class="contact-links reveal reveal-right">
+<a class="magnetic" href="mailto:cozy4213@gmail.com"><span>EMAIL</span><strong>cozy4213@gmail.com</strong><i>↗</i></a>
+<a class="magnetic" href="https://github.com/TAEYUN-CHOI" rel="noreferrer" target="_blank"><span>GITHUB</span><strong>github.com/TAEYUN-CHOI</strong><i>↗</i></a>
+<a class="magnetic" href="https://github.com/TAEYUN-CHOI/TaeEngine" rel="noreferrer" target="_blank"><span>MAIN REPO</span><strong>TaeEngine</strong><i>↗</i></a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<p>© <span id="year"></span> TAEYUN CHOI. BUILT WITH HTML, CSS &amp; JAVASCRIPT.</p>
+<a class="magnetic" href="#home">BACK TO TOP ↑</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
